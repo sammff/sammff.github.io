@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suzuki Motos - Way of Life</title>
+    <style>
+        /* Estilos Generales y Fondo */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #23272a 0%, #0f1112 100%);
+            color: #ffffff;
+            background-attachment: fixed;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #1c1e22; 
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+            border-bottom: 4px solid #e30613; /* Rojo Suzuki */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.6em;
+            letter-spacing: 4px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        /* Secciones con fondo traslucido */
+        section {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 5px solid #e30613;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            color: #ff3344;
+            margin-top: 0;
+            text-transform: uppercase;
+            font-size: 1.4em;
+            letter-spacing: 1px;
+        }
+
+        p {
+            line-height: 1.7;
+            font-size: 1.1em;
+            color: #e0e0e0;
+        }
+
+        /* Galeria de Imagenes */
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .tarjeta-imagen {
+            background: #191b1f;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #2c3037;
+        }
+
+        .tarjeta-imagen:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 25px rgba(227, 6, 19, 0.4);
+        }
+
+        .tarjeta-imagen img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .tarjeta-imagen .pie-foto {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 0.95em;
+            background: #0f1013;
+            color: #ff3344;
+            letter-spacing: 1px;
+        }
+
+        /* Pie de pagina */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #0b0c0e;
+            color: #66727a;
+            margin-top: 60px;
+            border-top: 1px solid #2c3037;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SUZUKI MOTORCYCLES</h1>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2>Historia y evolucion japonesa</h2>
+            <p>Suzuki es una corporacion japonesa fundada en el ano 1909 por Michio Suzuki. Aunque en sus inicios fabricaba telares para la industria textil, a mediados del siglo veinte comenzo el desarrollo de vehiculos motorizados. Su primera motocicleta exitosa fue la Power Free, una bicicleta con motor asistido lanzada en el ano 1952, iniciando una era de exitos globales.</p>
+        </section>
+
+        <section>
+            <h2>Innovacion e ingenieria mecanica</h2>
+            <p>La marca destaca por crear motores de alta resistencia y durabilidad. Un hito tecnologico de Suzuki fue el desarrollo del sistema de enfriamiento SACS, que combinaba aire y aceite para mantener la temperatura optima sin aumentar el peso del vehiculo. Ademas, su paso por el campeonato mundial de MotoGP ha dejado una huella imborrable, logrando ganar campeonatos de velocidad gracias a su agilidad.</p>
+        </section>
+
+        <section>
+            <h2>Lineas y modelos emblematicos</h2>
+            <p>El catalogo de Suzuki es famoso por dar vida a leyendas del asfalto. Su modelo mas iconico es la Suzuki GSX-R, una superdeportiva que cambio las reglas de la competicion. En el segmento de turismo y velocidad destaca la Hayabusa, conocida por romper records mundiales de velocidad final, mientras que la linea V-Strom domina las carreteras de aventura y viajes largos.</p>
+            
+            <div class="galeria">
+                <div class="tarjeta-imagen">
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=600" alt="Suzuki Deportiva">
+                    <div class="pie-foto">SERIE GSX-R - REINA DE LA PISTA</div>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="https://images.unsplash.com/photo-1622185135505-2d795003994a?auto=format&fit=crop&q=80&w=600" alt="Suzuki Hayabusa">
+                    <div class="pie-foto">HAYABUSA - LEYENDA VELOZ</div>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?auto=format&fit=crop&q=80&w=600" alt="Suzuki Aventura">
+                    <div class="pie-foto">SERIE V-STROM - ESPIRITU VIAJERO</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Pagina informativa sobre Suzuki - Creada sin acentos por peticion del usuario</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Motorrad - Placer de conducir</title>
+    <style>
+        /* Estilos Generales y Fondo */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1f2421 0%, #0d0e10 100%);
+            color: #ffffff;
+            background-attachment: fixed;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #2a2d34; 
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+            border-bottom: 4px solid #0066cc; /* Azul BMW */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.6em;
+            letter-spacing: 4px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        /* Secciones con fondo traslucido */
+        section {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 5px solid #0066cc;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #00bfff;
+            margin-top: 0;
+            text-transform: uppercase;
+            font-size: 1.4em;
+            letter-spacing: 1px;
+        }
+
+        p {
+            line-height: 1.7;
+            font-size: 1.1em;
+            color: #e0e0e0;
+        }
+
+        /* Galeria de Imagenes */
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .tarjeta-imagen {
+            background: #1a1c20;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #2d3238;
+        }
+
+        .tarjeta-imagen:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 25px rgba(0, 102, 204, 0.4);
+        }
+
+        .tarjeta-imagen img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .tarjeta-imagen .pie-foto {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 0.95em;
+            background: #111215;
+            color: #00bfff;
+            letter-spacing: 1px;
+        }
+
+        /* Pie de pagina */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #0b0c0e;
+            color: #778899;
+            margin-top: 60px;
+            border-top: 1px solid #2d3238;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BMW MOTORRAD</h1>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2>Historia y tradicion</h2>
+            <p>BMW Motorrad es la division de motocicletas de la famosa compania alemana BMW. Su historia comenzo en el ano 1923 con la presentacion de la mítica R32, una motocicleta que incorporo el primer motor de cilindros opuestos Boxer. Desde entonces, la marca ha mantenido esta configuracion mecanica como su sello de identidad mas importante en todo el mundo.</p>
+        </section>
+
+        <section>
+            <h2>Ingenieria y liderazgo tecnologico</h2>
+            <p>La marca destaca por su constante busqueda de innovacion en seguridad y rendimiento. Fueron pioneros en implementar el sistema de frenos antibloqueo ABS en motocicletas de produccion en serie. Ademas, desarrollan sistemas avanzados de suspension electronica y control de traccion dinamico para garantizar una experiencia de conduccion superior bajo cualquier condicion climatologica.</p>
+        </section>
+
+        <section>
+            <h2>Modelos referentes</h2>
+            <p>BMW cuenta con una oferta de vehiculos premium muy completa. La saga GS es su maximo orgullo, liderando las ventas globales en el segmento de motocicletas maxitrails de aventura. Para el asfalto y la velocidad pura, la serie S y en especial la S1000RR se han consolidado como referentes absolutos en competiciones de supermotos por su potencia y agilidad en circuito.</p>
+            
+            <!-- Galeria de Imagenes -->
+            <div class="galeria">
+                <div class="tarjeta-imagen">
+                    <img src="https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?auto=format&fit=crop&q=80&w=600" alt="BMW GS Aventura">
+                    <div class="pie-foto">SERIE GS - AVENTURA SIN LIMITES</div>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="https://images.unsplash.com/photo-1615172282427-9a57ef2d142e?auto=format&fit=crop&q=80&w=600" alt="BMW Superbike">
+                    <div class="pie-foto">SERIE S - VELOCIDAD PURA</div>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=600" alt="Motor Boxer BMW">
+                    <div class="pie-foto">MOTOR BOXER - TRADICION ALEMANA</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Pagina informativa sobre BMW Motorrad - Creada sin acentos por peticion del usuario</p>
+    </footer>
+
+</body>
+</html>

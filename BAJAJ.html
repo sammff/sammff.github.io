@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bajaj - El gigante de las dos ruedas</title>
+    <style>
+        /* Estilos Generales y Fondo */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0d1b2a 0%, #010811 100%);
+            color: #ffffff;
+            background-attachment: fixed;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #0056b3; /* Azul Bajaj */
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.6em;
+            letter-spacing: 3px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        /* Secciones con fondo traslucido */
+        section {
+            background: rgba(255, 255, 255, 0.04);
+            border-left: 5px solid #0056b3;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #0088ff;
+            margin-top: 0;
+            text-transform: uppercase;
+            font-size: 1.4em;
+            letter-spacing: 1px;
+        }
+
+        p {
+            line-height: 1.7;
+            font-size: 1.1em;
+            color: #e0e0e0;
+        }
+
+        /* Galeria de Imagenes */
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .tarjeta-imagen {
+            background: #111b29;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #1f3556;
+        }
+
+        .tarjeta-imagen:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 25px rgba(0, 86, 179, 0.3);
+        }
+
+        .tarjeta-imagen img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .tarjeta-imagen .pie-foto {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 0.95em;
+            background: #09101a;
+            color: #0088ff;
+            letter-spacing: 1px;
+        }
+
+        /* Pie de pagina */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #050b14;
+            color: #778899;
+            margin-top: 60px;
+            border-top: 1px solid #1f3556;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BAJAJ MOTORS</h1>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2>Historia de la marca</h2>
+            <p>Bajaj Auto es uno de los fabricantes de motocicletas mas grandes del mundo, con sede principal en la India. Fundada en la decada de 1940, la compania comenzo vendiendo vehiculos de tres ruedas y motonetas importadas. Con los anos, la marca desarrollo su propia tecnologia y se convirtio en un gigante global del transporte urbano, exportando a decenas de paises en Asia, Africa y America Latina.</p>
+        </section>
+
+        <section>
+            <h2>Innovacion y alianzas globales</h2>
+            <p>La marca destaca por su capacidad de innovacion tecnologica, introduciendo sistemas avanzados como el motor DTS-i de doble o triple bujia, que optimiza el consumo de combustible. Ademas, Bajaj ha consolidado alianzas estrategicas de gran importancia a nivel internacional con marcas de renombre como KTM, Husqvarna y Triumph para fabricar y desarrollar motores de alta calidad.</p>
+        </section>
+
+        <section>
+            <h2>Modelos emblematicos</h2>
+            <p>Bajaj cuenta con una linea muy exitosa de motocicletas diseñadas para el trabajo, el transporte diario y el turismo deportivo. Su serie mas famosa es Pulsar, conocida en varios mercados como Rouser, la cual revoluciono el concepto de motos urbanas de media cilindrada. Tambien destacan la linea Discover para ahorro de combustible y la serie Dominar, enfocada en viajes de larga distancia.</p>
+            
+            <div class="galeria">
+                <div class="tarjeta-imagen">
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=600" alt="Motocicleta urbana Bajaj">
+                    <div class="pie-foto">SERIE PULSAR - PODER URBANO</div>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="https://images.unsplash.com/photo-1622185135505-2d795003994a?auto=format&fit=crop&q=80&w=600" alt="Motocicleta de viaje">
+                    <div class="pie-foto">SERIE DOMINAR - TURISMO</div>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?auto=format&fit=crop&q=80&w=600" alt="Linea de produccion">
+                    <div class="pie-foto">TECNOLOGIA Y PRODUCCION GLOBAL</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Pagina informativa sobre Bajaj - Creada sin acentos por peticion del usuario</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamaha - Revoluciona tu corazon</title>
+    <style>
+        /* Estilos Generales y Fondo */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #050c1a 0%, #010307 100%);
+            color: #ffffff;
+            background-attachment: fixed;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #0d1b3e; 
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
+            border-bottom: 4px solid #0055ff; /* Azul Racing Yamaha */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.6em;
+            letter-spacing: 4px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* Contenedor Principal */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        /* Secciones con fondo traslucido */
+        section {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 5px solid #0055ff;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            color: #3388ff;
+            margin-top: 0;
+            text-transform: uppercase;
+            font-size: 1.4em;
+            letter-spacing: 1px;
+        }
+
+        p {
+            line-height: 1.7;
+            font-size: 1.1em;
+            color: #e0e0e0;
+        }
+
+        /* Galeria de Imagenes */
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .tarjeta-imagen {
+            background: #091124;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #14254b;
+        }
+
+        .tarjeta-imagen:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 25px rgba(0, 85, 255, 0.4);
+        }
+
+        .tarjeta-imagen img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .tarjeta-imagen .pie-foto {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 0.95em;
+            background: #040812;
+            color: #3388ff;
+            letter-spacing: 1px;
+        }
+
+        /* Pie de pagina */
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #02040a;
+            color: #556688;
+            margin-top: 60px;
+            border-top: 1px solid #14254b;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>YAMAHA MOTOR</h1>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2>Origen e historia</h2>
+            <p>Yamaha Motor es una compania japonesa fundada en el ano 1955 tras separarse de su empresa matriz dedicada a la fabricacion de pianos e instrumentos musicales. Su primera motocicleta fue la famosa YA-1, conocida popularmente como la libelula roja, la cual demostro desde el primer dia una gran fiabilidad y un rendimiento excepcional en las carreras locales de Japon.</p>
+        </section>
+
+        <section>
+            <h2>Innovacion y herencia en competicion</h2>
+            <p>El lema de la marca es Kando, una palabra japonesa que expresa el sentimiento de profunda satisfaccion ante la maxima calidad. Yamaha ha sido un pilar fundamental en el campeonato mundial de MotoGP, logrando decenas de titulos mundiales con pilotos legendarios. Tambien introdujeron tecnologías revolucionarias como el motor de ciguenal Crossplane, que ofrece una entrega de potencia lineal unica.</p>
+        </section>
+
+        <section>
+            <h2>Modelos de leyenda</h2>
+            <p>El catalogo de Yamaha abarca todo tipo de necesidades sobre dos ruedas. En el segmento deportivo, la serie YZF-R1 y R6 son iconos mundiales de velocidad. Para quienes buscan versatilidad en el dia a dia, la familia MT con su concepto del lado oscuro de Japon domina el mercado de las motos naked, mientras que la Tenere es el referente para los amantes de las travesias por el desierto.</p>
+            
+            <!-- Galeria de Imagenes -->
+            <div class="galeria">
+                <div class="tarjeta-imagen">
+                    <img src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?auto=format&fit=crop&q=80&w=600" alt="Yamaha deportiva">
+                    <div class="pie-foto">SERIE R - VELOCIDAD EN PISTA</div>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&q=80&w=600" alt="Yamaha Hyper Naked">
+                    <div class="pie-foto">SERIE MT - PODER URBANO</div>
+                </div>
+                <div class="tarjeta-imagen">
+                    <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&q=80&w=600" alt="Yamaha aventura">
+                    <div class="pie-foto">SERIE TENERE - AVENTURA TOTAL</div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Pagina informativa sobre Yamaha Motor - Creada sin acentos por peticion del usuario</p>
+    </footer>
+
+</body>
+</html>
