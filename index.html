@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcas de Motocicletas</title>
+    <style>
+        /* Estructura general en dos columnas (Layout Moderno) */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+
+        /* Columna Izquierda (Antiguo Marco Izquierdo) */
+        .menu-izquierdo {
+            width: 25%;
+            background-color: #e5b3fe; /* Color original de tu marco izquierdo */
+            padding: 30px 20px;
+            box-sizing: border-box;
+            border-right: 2px solid #d196f0;
+        }
+
+        .menu-izquierdo a.principal-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            background: #f3d9ff;
+            padding: 8px 15px;
+            border-radius: 4px;
+            margin-bottom: 25px;
+            border: 1px solid #c080e0;
+            transition: background 0.2s;
+        }
+
+        .menu-izquierdo a.principal-btn:hover {
+            background: #e0beff;
+        }
+
+        .menu-izquierdo ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .menu-izquierdo li {
+            margin-bottom: 15px;
+        }
+
+        .menu-izquierdo li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .menu-izquierdo li a:hover {
+            color: #7b00d6;
+            text-decoration: underline;
+        }
+
+        /* Columna Derecha (Antiguo Marco Derecho / Contenedor de páginas) */
+        .contenido-derecho {
+            width: 75%;
+            height: 100%;
+            border: none;
+            background-color: #f3d9ff; /* Color original de tu marco derecho */
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="menu-izquierdo">
+        <a href="marco derecho.html" target="visor_contenido" class="principal-btn">Principal</a>
+        
+        <ul>
+            <li><a href="KTM.html" target="visor_contenido">KTM</a></li>
+            <li><a href="BAJAJ.html" target="visor_contenido">BAJAJ</a></li>
+            <li><a href="BMW.html" target="visor_contenido">BMW</a></li>
+            <li><a href="YAMAHA.html" target="visor_contenido">YAMAHA</a></li>
+            <li><a href="SUZUKI.html" target="visor_contenido">SUZUKI</a></li>
+        </ul>
+    </nav>
+
+    <iframe src="marco derecho.html" name="visor_contenido" class="contenido-derecho"></iframe>
+
+</body>
+</html>
