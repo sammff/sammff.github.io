@@ -1,34 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
-<title>
-Marco de la izquierda
-</title>
+    <meta charset="UTF-8">
+    <title>Marco Izquierdo</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            font-family: Arial, sans-serif;
+        }
+        .marco-izquierdo {
+            width: 25%;
+            height: 100vh;
+            background-color: #2E7D32; /* Fondo verde oscuro */
+            color: white;
+            padding: 30px 20px;
+            box-sizing: border-box;
+        }
+        .marco-izquierdo h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            text-align: center;
+            border-bottom: 2px solid white;
+            padding-bottom: 10px;
+        }
+        .marco-izquierdo ul {
+            list-style-type: disc;
+            font-size: 20px;
+            line-height: 2;
+            padding-left: 25px;
+        }
+        .contenido {
+            width: 75%;
+            padding: 20px;
+        }
+    </style>
 </head>
-<body bgcolor = "#e5b3fe">
-<a href = "marco derecho 2.html" target = "principal">
-principal
-</a>
-<br>
-<br>
-<ul>
-<li>
-<a href = "prac 2.html" target = "principal" >
-KTM
-</a>
-<li>
-<a href = "prac 3.html" target = "principal">
-BAJAJ
-</a>
-<li>
-<a href = "prac 4.html" target = "principal">
-BMW
-</a>
-<li>
-<a href = "prac 5.html" target = "principal">
-YAMAHA
-</a>
-<li>
-<a href = "prac 6.html" target = "principal">
-SUZUKI
-</a>
+<body>
+    <div class="marco-izquierdo">
+        <h2>PRINCIPAL</h2>
+        <ul>
+            <li>Composta</li>
+            <li>Cuidado</li>
+            <li>Reciclaje</li>
+        </ul>
+    </div>
+    
+    <div class="contenido">
+        <h1>Contenido principal</h1>
+        <p>Aquí va el resto de tu página web.</p>
+    </div>
 </body>
 </html>

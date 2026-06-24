@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo sobre la Composta</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background-color: #F1F8E9;
+            color: #33691E;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #558B2F;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .card h2 {
+            color: #2E7D32;
+            border-left: 5px solid #8BC34A;
+            padding-left: 10px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin: 15px 0;
+            height: 300px;
+            object-fit: cover;
+        }
+        .lista-doble {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .lista-doble div {
+            flex: 1;
+            min-width: 250px;
+        }
+        .verde {
+            background-color: #DCEDC8;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .cafe {
+            background-color: #D7CCC8;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #33691E;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌱 LA COMPOSTA 🌱</h1>
+        <p>Convierte tus residuos en vida para la tierra</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>¿Qué es la composta?</h2>
+            <img src="https://images.unsplash.com/photo-1593113616828-6f22bca04804?w=800" alt="Composta orgánica en manos">
+            <p>La <strong>composta</strong> es un abono natural que se forma con la descomposición de residuos orgánicos como restos de frutas, verduras, hojas secas y cáscaras de huevo. Los microorganismos transforman estos desechos en tierra rica en nutrientes.</p>
+            <p>Es un proceso 100% natural que imita lo que hace la naturaleza en el bosque.</p>
+        </div>
+
+        <div class="card">
+            <h2>Beneficios de hacer composta</h2>
+            <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800" alt="Plantas creciendo en tierra de composta">
+            <ul>
+                <li><strong>Reduce la basura:</strong> Hasta el 50% de tus residuos domésticos se pueden compostar</li>
+                <li><strong>Mejora el suelo:</strong> Aporta nutrientes y retiene mejor el agua</li>
+                <li><strong>Ayuda a las plantas:</strong> Crecen más fuertes y sanas sin químicos</li>
+                <li><strong>Cuida el planeta:</strong> Disminuye gases de efecto invernadero de los basureros</li>
+                <li><strong>Es gratis:</strong> Obtienes abono de alta calidad sin gastar</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>¿Qué SÍ y qué NO va en la composta?</h2>
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800" alt="Residuos orgánicos para composta">
+            <div class="lista-doble">
+                <div class="verde">
+                    <h3>✅ SÍ puedes poner:</h3>
+                    <ul>
+                        <li>Cáscaras de frutas y verduras</li>
+                        <li>Restos de café y bolsitas de té</li>
+                        <li>Cáscaras de huevo trituradas</li>
+                        <li>Hojas secas y pasto</li>
+                        <li>Papel y cartón sin tinta</li>
+                        <li>Ramas pequeñas</li>
+                    </ul>
+                </div>
+                <div class="cafe">
+                    <h3>❌ NO pongas:</h3>
+                    <ul>
+                        <li>Carne, huesos o lácteos</li>
+                        <li>Aceites o alimentos grasosos</li>
+                        <li>Heces de perros o gatos</li>
+                        <li>Plantas enfermas</li>
+                        <li>Plástico, vidrio o metal</li>
+                        <li>Cítricos en exceso</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Cómo hacer tu composta en 4 pasos</h2>
+            <img src="https://images.unsplash.com/photo-1589923188651-268a9765d022?w=800" alt="Compostera casera">
+            <ol>
+                <li><strong>Elige un lugar:</strong> Usa una caja, bote o un rincón en tu jardín con sombra y drenaje</li>
+                <li><strong>Alterna capas:</strong> Pon una capa de "cafés" -hojas secas, cartón- y una de "verdes" -residuos de comida-</li>
+                <li><strong>Mantén húmedo:</strong> Debe sentirse como una esponja exprimida. Riega si está seco</li>
+                <li><strong>Airea cada semana:</strong> Revuelve con una pala para que entre oxígeno</li>
+            </ol>
+            <p><strong>Tiempo:</strong> En 2 a 6 meses tendrás tierra negra, con olor a bosque, lista para tus plantas 🌳</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>¡Empieza hoy tu composta y ayuda al MEDIO AMBIENTE! 💚</p>
+    </footer>
+</body>
+</html>

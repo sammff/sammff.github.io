@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo sobre el Reciclaje</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            background-color: #E8F5E9;
+            color: #1B5E20;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #43A047, #2E7D32);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 38px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .card h2 {
+            color: #2E7D32;
+            margin-top: 0;
+            border-bottom: 3px solid #A5D6A7;
+            padding-bottom: 8px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 12px;
+            margin: 20px 0;
+            height: 320px;
+            object-fit: cover;
+        }
+        .colores {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .color-box {
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+        .azul { background-color: #1976D2; }
+        .amarillo { background-color: #FBC02D; color: #333; }
+        .verde { background-color: #388E3C; }
+        .gris { background-color: #616161; }
+        .cafe { background-color: #6D4C41; }
+        
+        .proceso {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .paso {
+            background: #C8E6C9;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+        }
+        .paso h3 {
+            margin: 0 0 10px 0;
+            font-size: 40px;
+        }
+        .dato {
+            background: #FFF9C4;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 6px solid #FBC02D;
+            text-align: center;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #1B5E20;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>♻️ RECICLAJE ♻️</h1>
+        <p>Transforma tu basura en nuevos recursos para el planeta</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>¿Qué es reciclar?</h2>
+            <img src="https://images.unsplash.com/photo-1532996122720-eec0886c04c8?w=900" alt="Símbolo de reciclaje con materiales">
+            <p><strong>Reciclar</strong> es el proceso de convertir materiales de desecho en nuevos productos para evitar el uso de materia prima nueva. Así reducimos basura, ahorramos energía y cuidamos los recursos naturales.</p>
+            <p>Es diferente a reutilizar: reciclar implica transformar el material por completo.</p>
+        </div>
+
+        <div class="card">
+            <h2>¿Por qué es tan importante?</h2>
+            <img src="https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?w=900" alt="Botellas de plástico para reciclar">
+            <ul>
+                <li><strong>Ahorra energía:</strong> Hacer aluminio reciclado usa 95% menos energía que hacerlo nuevo</li>
+                <li><strong>Reduce contaminación:</strong> Menos basura en ríos, mares y calles</li>
+                <li><strong>Salva árboles:</strong> 1 tonelada de papel reciclado salva 17 árboles</li>
+                <li><strong>Menos basureros:</strong> Los rellenos sanitarios se llenan más lento</li>
+                <li><strong>Genera empleos:</strong> La industria del reciclaje da trabajo a miles de personas</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Colores de los botes de reciclaje</h2>
+            <img src="https://images.unsplash.com/photo-1604187351574-c75ca79f5807?w=900" alt="Botes de reciclaje de colores">
+            <p>Para reciclar bien, hay que separar correctamente. Estos son los colores estándar:</p>
+            <div class="colores">
+                <div class="color-box azul">
+                    <h3>AZUL</h3>
+                    <p>Papel y Cartón</p>
+                    <small>Periódicos, cajas, cuadernos</small>
+                </div>
+                <div class="color-box amarillo">
+                    <h3>AMARILLO</h3>
+                    <p>Plástico y Metal</p>
+                    <small>Botellas, latas, envases</small>
+                </div>
+                <div class="color-box verde">
+                    <h3>VERDE</h3>
+                    <p>Vidrio</p>
+                    <small>Botellas, frascos sin tapa</small>
+                </div>
+                <div class="color-box gris">
+                    <h3>GRIS</h3>
+                    <p>Resto / No reciclable</p>
+                    <small>Pañales, colillas, chicles</small>
+                </div>
+                <div class="color-box cafe">
+                    <h3>CAFÉ</h3>
+                    <p>Orgánico</p>
+                    <small>Comida, cáscaras, poda</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>El proceso del reciclaje en 4 pasos</h2>
+            <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=900" alt="Planta de reciclaje">
+            <div class="proceso">
+                <div class="paso">
+                    <h3>1️⃣</h3>
+                    <strong>Separar</strong>
+                    <p>En casa divides tu basura por material</p>
+                </div>
+                <div class="paso">
+                    <h3>2️⃣</h3>
+                    <strong>Recolectar</strong>
+                    <p>El camión o centro de acopio lo recoge</p>
+                </div>
+                <div class="paso">
+                    <h3>3️⃣</h3>
+                    <strong>Transformar</strong>
+                    <p>En la planta se limpia y se hace materia prima</p>
+                </div>
+                <div class="paso">
+                    <h3>4️⃣</h3>
+                    <strong>Crear</strong>
+                    <p>Se fabrican productos nuevos con ese material</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Errores comunes al reciclar</h2>
+            <img src="https://images.unsplash.com/photo-1605600659908-0ef719419d41?w=900" alt="Basura mal separada">
+            <ul>
+                <li>❌ <strong>Tirar cosas sucias:</strong> Enjuaga botellas y frascos antes de reciclar</li>
+                <li>❌ <strong>Papel mojado o con comida:</strong> Ya no se puede reciclar, va a la basura</li>
+                <li>❌ <strong>Bolsas de plástico en bote amarillo:</strong> Muchas ciudades no las aceptan, mejor en centros especiales</li>
+                <li>❌ <strong>Pilas y focos:</strong> Van a recolección especial, son residuos peligrosos</li>
+                <li>❌ <strong>Vidrio roto con lo demás:</strong> Puede lastimar a quien separa. Ponlo aparte bien envuelto</li>
+            </ul>
+        </div>
+
+        <div class="card dato">
+            <p>💡 DATO CURIOSO: Reciclar 1 lata de aluminio ahorra energía suficiente para ver tele por 3 horas. ¡Una botella de vidrio reciclada ahorra energía para prender un foco por 4 horas!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Reciclar no es una obligación, es una responsabilidad con tu futuro ♻️💚</p>
+        <p>© 2026 - Cuidemos el Medio Ambiente</p>
+    </footer>
+</body>
+</html>

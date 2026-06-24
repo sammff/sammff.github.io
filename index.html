@@ -3,90 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcas de Motocicletas</title>
+    <title>Sitio Web - Medio Ambiente</title>
     <style>
-        /* Estructura general en dos columnas (Layout Moderno) */
+        * {
+            box-sizing: border-box;
+        }
         body {
             margin: 0;
             padding: 0;
             display: flex;
+            font-family: 'Segoe UI', Arial, sans-serif;
             height: 100vh;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             overflow: hidden;
         }
 
-        /* Columna Izquierda (Antiguo Marco Izquierdo) */
-        .menu-izquierdo {
-            width: 25%;
-            background-color: #e5b3fe; /* Color original de tu marco izquierdo */
+        /* Marco Izquierdo (Menú de Navegación) */
+        .marco-izquierdo {
+            width: 20%;
+            height: 100vh;
+            background-color: #2E7D32; /* Fondo verde oscuro */
+            color: white;
             padding: 30px 20px;
-            box-sizing: border-box;
-            border-right: 2px solid #d196f0;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+            z-index: 10;
         }
-
-        .menu-izquierdo a.principal-btn {
-            display: inline-block;
-            text-decoration: none;
-            color: #000;
-            font-weight: bold;
-            background: #f3d9ff;
-            padding: 8px 15px;
-            border-radius: 4px;
-            margin-bottom: 25px;
-            border: 1px solid #c080e0;
-            transition: background 0.2s;
+        .marco-izquierdo h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+            text-align: center;
+            border-bottom: 2px solid white;
+            padding-bottom: 10px;
         }
-
-        .menu-izquierdo a.principal-btn:hover {
-            background: #e0beff;
+        .marco-izquierdo ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
         }
-
-        .menu-izquierdo ul {
-            list-style-type: square;
-            padding-left: 20px;
-        }
-
-        .menu-izquierdo li {
+        .marco-izquierdo li {
             margin-bottom: 15px;
         }
-
-        .menu-izquierdo li a {
-            text-decoration: none;
-            color: #333;
-            font-size: 1.2em;
-            font-weight: 600;
-            transition: color 0.2s;
+        .marco-izquierdo button {
+            width: 100%;
+            background: none;
+            border: 2px solid transparent;
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            text-align: left;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .marco-izquierdo button:hover {
+            background-color: #4CAF50;
+            border-color: white;
         }
 
-        .menu-izquierdo li a:hover {
-            color: #7b00d6;
-            text-decoration: underline;
-        }
-
-        /* Columna Derecha (Antiguo Marco Derecho / Contenedor de páginas) */
-        .contenido-derecho {
-            width: 75%;
-            height: 100%;
+        /* Contenedor del Centro (Carga las páginas principales) */
+        .contenido-central {
+            width: 65%;
+            height: 100vh;
             border: none;
-            background-color: #f3d9ff; /* Color original de tu marco derecho */
+        }
+
+        /* Marco Derecho (Banner estático) */
+        .marco-derecho {
+            width: 15%;
+            height: 100vh;
+            background-color: #4CAF50; /* Fondo verde claro */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            writing-mode: vertical-rl; /* Texto vertical elegante */
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            box-shadow: -2px 0 5px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body>
 
-    <nav class="menu-izquierdo">
-        <a href="marco derecho.html" target="visor_contenido" class="principal-btn">Principal</a>
-        
+    <div class="marco-izquierdo">
+        <h2>PRINCIPAL</h2>
         <ul>
-            <li><a href="KTM.html" target="visor_contenido">KTM</a></li>
-            <li><a href="BAJAJ.html" target="visor_contenido">BAJAJ</a></li>
-            <li><a href="BMW.html" target="visor_contenido">BMW</a></li>
-            <li><a href="YAMAHA.html" target="visor_contenido">YAMAHA</a></li>
-            <li><a href="SUZUKI.html" target="visor_contenido">SUZUKI</a></li>
+            <li><button onclick="cargarPagina('cuidado.html')">🌍 Cuidado</button></li>
+            <li><button onclick="cargarPagina('composta.html')">🌱 Composta</button></li>
+            <li><button onclick="cargarPagina('reciclaje.html')">♻️ Reciclaje</button></li>
         </ul>
-    </nav>
+    </div>
+    
+    <iframe id="pantalla-principal" class="contenido-central" src="cuidado.html"></iframe>
 
-    <iframe src="marco derecho.html" name="visor_contenido" class="contenido-derecho"></iframe>
+    <div class="marco-derecho">
+        MEDIO AMBIENTE
+    </div>
+
+    <script>
+        function cargarPagina(url) {
+            document.getElementById('pantalla-principal').src = url;
+        }
+    </script>
 
 </body>
 </html>
